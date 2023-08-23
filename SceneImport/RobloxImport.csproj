@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C2AAB977-AD1A-49E0-9933-722EFACDDF2B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SceneImport</RootNamespace>
+    <AssemblyName>SceneImport</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony, Version=2.2.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Neos\app\nml_libs\0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="Accessibility" />
+    <Reference Include="ArchiteX">
+      <HintPath>..\..\..\..\..\..\Neos\app\Neos_Data\Managed\ArchiteX.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\..\..\..\..\Neos\app\Neos_Data\Managed\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="AssimpNet, Version=3.2.0.0, Culture=neutral, PublicKeyToken=0d51b391f59f42a6, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Neos\app\Neos_Data\Managed\AssimpNet.dll</HintPath>
+    </Reference>
+    <Reference Include="AsyncIO">
+      <HintPath>..\..\..\..\..\..\Neos\app\Neos_Data\Managed\AsyncIO.dll</HintPath>
+    </Reference>
+    <Reference Include="AsyncLock">
+      <HintPath>..\..\..\..\..\..\Neos\app\Neos_Data\Managed\AsyncLock.dll</HintPath>
+    </Reference>
+    <Reference Include="BaseX, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Neos\app\Neos_Data\Managed\BaseX.dll</HintPath>
+    </Reference>
+    <Reference Include="Ben.Demystifier, Version=0.1.0.0, Culture=neutral, PublicKeyToken=a6d206e05440431a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Neos\app\Neos_Data\Managed\Ben.Demystifier.dll</HintPath>
+    </Reference>
+    <Reference Include="BepuPhysics, Version=2.4.0.1, Culture=neutral, PublicKeyToken=9345ce38ee48a1cd, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Neos\app\Neos_Data\Managed\BepuPhysics.dll</HintPath>
+    </Reference>
+    <Reference Include="BepuUtilities, Version=2.4.0.1, Culture=neutral, PublicKeyToken=a595ef937c270ac9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Neos\app\Neos_Data\Managed\BepuUtilities.dll</HintPath>
+    </Reference>
+    <Reference Include="Bhaptics.Tact">
+      <HintPath>..\..\..\..\..\..\Neos\app\Neos_Data\Managed\Bhaptics.Tact.dll</HintPath>
+    </Reference>
+    <Reference Include="Boo.Lang">
+      <HintPath>..\..\..\..\..\..\Neos\app\Neos_Data\Managed\Boo.Lang.dll</HintPath>
+    </Reference>
+    <Reference Include="BusinessX">
+      <HintPath>..\..\..\..\..\..\Neos\app\Neos_Data\Managed\BusinessX.dll</HintPath>
+    </Reference>
+    <Reference Include="CircuitSimulator">
+      <HintPath>..\..\..\..\..\..\Neos\app\Libraries\CircuitSimulator.dll</HintPath>
+    </Reference>
+    <Reference Include="CloudX.Shared, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Neos\app\Neos_Data\Managed\CloudX.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="CodeX, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Neos\app\Neos_Data\Managed\CodeX.dll</HintPath>
+    </Reference>
+    <Reference Include="CommandX, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Neos\app\Neos_Data\Managed\CommandX.dll</HintPath>
+    </Reference>
+    <Reference Include="Compressonator.NET, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Neos\app\Neos_Data\Managed\Compressonator.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="CortexAccess, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Neos\app\Neos_Data\Managed\CortexAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="CortexInterface, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Neos\app\Neos_Data\Managed\CortexInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="crunch.NET, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Neos\app\Neos_Data\Managed\crunch.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="CSCore, Version=1.2.1.2, Culture=neutral, PublicKeyToken=5a08f2b6f4415dea, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Neos\app\Neos_Data\Managed\CSCore.dll</HintPath>
+    </Reference>
+    <Reference Include="CUETools.Codecs, Version=1.0.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Neos\app\Neos_Data\Managed\CUETools.Codecs.dll</HintPath>
+    </Reference>
+    <Reference Include="CUETools.Codecs.FLAKE, Version=1.0.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Neos\app\Neos_Data\Managed\CUETools.Codecs.FLAKE.dll</HintPath>
+    </Reference>
+    <Reference Include="FPGA_Nodes">
+      <HintPath>..\..\..\..\..\..\Neos\app\Libraries\FPGA_Nodes.dll</HintPath>
+    </Reference>
+    <Reference Include="FreeImageNET, Version=3.15.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Neos\app\Neos_Data\Managed\FreeImageNET.dll</HintPath>
+    </Reference>
+    <Reference Include="FrooxEngine, Version=2022.1.28.1310, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Neos\app\Neos_Data\Managed\FrooxEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="GeneX">
+      <HintPath>..\..\..\..\..\..\Neos\app\Neos_Data\Managed\GeneX.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Protobuf">
+      <HintPath>..\..\..\..\..\..\Neos\app\Neos_Data\Managed\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.ProtocolBuffers">
+      <HintPath>..\..\..\..\..\..\Neos\app\Neos_Data\Managed\Google.ProtocolBuffers.dll</HintPath>
+    </Reference>
+    <Reference Include="Graph3D.Vrml, Version=2.0.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Neos\app\Neos_Data\Managed\Graph3D.Vrml.dll</HintPath>
+    </Reference>
+    <Reference Include="Jeffijoe.MessageFormat, Version=3.0.1.0, Culture=neutral, PublicKeyToken=cb396c58e8ae2045, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Neos\app\Neos_Data\Managed\Jeffijoe.MessageFormat.dll</HintPath>
+    </Reference>
+    <Reference Include="JM.LinqFaster, Version=0.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Neos\app\Neos_Data\Managed\JM.LinqFaster.dll</HintPath>
+    </Reference>
+    <Reference Include="laszip.net, Version=2.2.0.0, Culture=neutral, PublicKeyToken=bc50e9aa04368e1b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Neos\app\Neos_Data\Managed\laszip.net.dll</HintPath>
+    </Reference>
+    <Reference Include="lib-client-csharp">
+      <HintPath>..\..\..\..\..\..\Neos\app\Neos_Data\Managed\lib-client-csharp.dll</HintPath>
+    </Reference>
+    <Reference Include="LinqFasterSIMD">
+      <HintPath>..\..\..\..\..\..\Neos\app\Neos_Data\Managed\LinqFasterSIMD.dll</HintPath>
+    </Reference>
+    <Reference Include="LiteDB, Version=4.1.5.0, Culture=neutral, PublicKeyToken=4ee40123013c9f27, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Neos\app\Neos_Data\Managed\LiteDB.dll</HintPath>
+    </Reference>
+    <Reference Include="LiteNetLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Neos\app\Neos_Data\Managed\LiteNetLib.dll</HintPath>
+    </Reference>
+    <Reference Include="LogiX">
+      <HintPath>..\..\..\..\..\..\Neos\app\Neos_Data\Managed\LogiX.dll</HintPath>
+    </Reference>
+    <Reference Include="LZ4, Version=1.0.10.93, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Neos\app\Neos_Data\Managed\LZ4.dll</HintPath>
+    </Reference>
+    <Reference Include="LZMA, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Neos\app\Neos_Data\Managed\LZMA.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Connections.Abstractions">
+      <HintPath>..\..\..\..\..\..\Neos\app\Neos_Data\Managed\Microsoft.AspNetCore.Connections.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Http.Connections.Client">
+      <HintPath>..\..\..\..\..\..\Neos\app\Neos_Data\Managed\Microsoft.AspNetCore.Http.Connections.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Http.Connections.Common">
+      <HintPath>..\..\..\..\..\..\Neos\app\Neos_Data\Managed\Microsoft.AspNetCore.Http.Connections.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Http.Features">
+      <HintPath>..\..\..\..\..\..\Neos\app\Neos_Data\Managed\Microsoft.AspNetCore.Http.Features.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.SignalR.Client">
+      <HintPath>..\..\..\..\..\..\Neos\app\Neos_Data\Managed\Microsoft.AspNetCore.SignalR.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.SignalR.Client.Core">
+      <HintPath>..\..\..\..\..\..\Neos\app\Neos_Data\Managed\Microsoft.AspNetCore.SignalR.Client.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.SignalR.Common">
+      <HintPath>..\..\..\..\..\..\Neos\app\Neos_Data\Managed\Microsoft.AspNetCore.SignalR.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.SignalR.Protocols.Json">
+      <HintPath>..\..\..\..\..\..\Neos\app\Neos_Data\Managed\Microsoft.AspNetCore.SignalR.Protocols.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Neos\app\Neos_Data\Managed\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Extensions.DependencyInjection">
+      <HintPath>..\..\..\..\..\..\Neos\app\Neos_Data\Managed\Microsoft.Extensions.DependencyInjection.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Neos\app\Neos_Data\Managed\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging">
+      <HintPath>..\..\..\..\..\..\Neos\app\Neos_Data\Managed\Microsoft.Extensions.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Neos\app\Neos_Data\Managed\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Options">
+      <HintPath>..\..\..\..\..\..\Neos\app\Neos_Data\Managed\Microsoft.Extensions.Options.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Primitives">
+      <HintPath>..\..\..\..\..\..\Neos\app\Neos_Data\Managed\Microsoft.Extensions.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Win32.Primitives" />
+    <Reference Include="Mikktspace.NET, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Neos\app\Neos_Data\Managed\Mikktspace.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="MimeDetective, Version=0.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Neos\app\Neos_Data\Managed\MimeDetective.dll</HintPath>
+    </Reference>
+    <Reference Include="MinecraftNeos">
+      <HintPath>..\..\..\..\..\..\Neos\app\Neos_Data\Managed\MinecraftNeos.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil, Version=0.11.3.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Neos\app\Neos_Data\Managed\Mono.Cecil.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil.Pdb, Version=0.11.3.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Neos\app\Neos_Data\Managed\Mono.Cecil.Pdb.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil.Rocks, Version=0.11.3.0, Culture=neutral, PublicKeyToken=50cebf1cceb9d05e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Neos\app\Neos_Data\Managed\Mono.Cecil.Rocks.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Data.Sqlite">
+      <HintPath>..\..\..\..\..\..\Neos\app\Neos_Data\Managed\Mono.Data.Sqlite.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Messaging">
+      <HintPath>..\..\..\..\..\..\Neos\app\Neos_Data\Managed\Mono.Messaging.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Posix">
+      <HintPath>..\..\..\..\..\..\Neos\app\Neos_Data\Managed\Mono.Posix.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Security">
+      <HintPath>..\..\..\..\..\..\Neos\app\Neos_Data\Managed\Mono.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.WebBrowser">
+      <HintPath>..\..\..\..\..\..\Neos\app\Neos_Data\Managed\Mono.WebBrowser.dll</HintPath>
+    </Reference>
+    <Reference Include="NeosModLoader, Version=1.12.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Neos\app\Libraries\NeosModLoader.dll</HintPath>
+    </Reference>
+    <Reference Include="NeosSampleLibrary">
+      <HintPath>..\..\..\..\..\..\Neos\app\Libraries\NeosSampleLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="netstandard" />
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Neos\app\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json.Bson, Version=1.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Neos\app\Newtonsoft.Json.Bson.dll</HintPath>
+    </Reference>
+    <Reference Include="obs-websocket-dotnet, Version=4.9.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Neos\app\obs-websocket-dotnet.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpCircuit">
+      <HintPath>..\..\..\..\..\..\Neos\app\Libraries\SharpCircuit.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="TestNeosLibrary">
+      <HintPath>..\..\..\..\..\..\Neos\app\Libraries\TestNeosLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="tex\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>xcopy "$(TargetPath)" "C:\Neos\app\nml_mods\SceneImport.dll" /y /c</PostBuildEvent>
+  </PropertyGroup>
+</Project>
